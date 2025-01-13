@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xampp\\htdocs\\dormitory\\YourProjectName\\YourProjectName.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\dormitory\\YourProjectName.csproj",
       "projectName": "YourProjectName",
-      "projectPath": "C:\\xampp\\htdocs\\dormitory\\YourProjectName\\YourProjectName.csproj",
+      "projectPath": "C:\\xampp\\htdocs\\dormitory\\YourProjectName.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "C:\\xampp\\htdocs\\dormitory\\YourProjectName\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\dormitory\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config"
