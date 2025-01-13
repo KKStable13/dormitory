@@ -11,9 +11,7 @@ on:
 
 jobs:
   build:
-  
     runs-on: windows-latest
-    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -34,17 +32,6 @@ jobs:
         with:
           name: .net-app
           path: ${{env.DOTNET_ROOT}}/myapp
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-    - name: Set up .NET Core
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '7.0.x'
-
-    - name: Build with dotnet
-      working-directory: path/to/your/project
-      run: dotnet build --configuration Release
 
   deploy:
     runs-on: windows-latest
@@ -64,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A397938D91044B20877E9F583E314607 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_858A13E6BF014D0F90F720BDD4F1E4DC }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_332381E918664C17909D0A9046CC84FF }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_48AD8B66778C4F399572CD8037581989 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_41C028B7EBA54898A7DE95DE3A5C1B98 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A5065A67118A4BD3990D6809DA3A2D33 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
