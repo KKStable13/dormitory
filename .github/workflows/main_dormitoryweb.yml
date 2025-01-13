@@ -1,3 +1,6 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
 name: Build and deploy ASP.Net Core app to Azure Web App - DormitoryWeb
 
 on:
@@ -19,11 +22,9 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Build with dotnet
-        working-directory: path/to/your/project # ใส่ตำแหน่งที่เก็บไฟล์ .csproj หรือ .sln
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        working-directory: path/to/your/project # ใส่ตำแหน่งที่เก็บไฟล์ .csproj หรือ .sln
         run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
       - name: Upload artifact for deployment job
@@ -39,20 +40,20 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write # This is required for requesting the JWT
+      id-token: write #This is required for requesting the JWT
 
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-
+      
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_05079CF141414F3EB041DDD925D78488 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6E7502C38E404AFCA10ECA496E989AEF }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_CE8D81D79909452DBC6C4E03C7B5603C }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -60,4 +61,5 @@ jobs:
         with:
           app-name: 'DormitoryWeb'
           slot-name: 'Production'
-          package: ${{env.DOTNET_ROOT}}/myapp
+          package: .
+          
