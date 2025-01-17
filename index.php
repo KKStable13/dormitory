@@ -1,3 +1,26 @@
+<?php
+session_start();
+if (!isset($_SESSION['User_name']) && !isset($_SESSION['id'])) {
+    header("Location: login.html");
+    exit();
+}
+?>
+
+<?php
+$host = "deploywebapp2.mysql.database.azure.com";
+$username = "KKStable";
+$password = "Phetkho13112545";
+$database = "dormitory";
+
+// Tạo kết nối
+$conn = new mysqli($host, $username, $password, $database);
+
+// Kiểm tra kết nối
+if ($conn->connect_error) {
+    die("Kết nối tới cơ sở dữ liệu thất bại: " . $conn->connect_error);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
