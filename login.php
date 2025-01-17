@@ -1,11 +1,34 @@
 <?php
-    session_start();
-    $host = 'deploywebapp2.mysql.database.azure.com';
-    $username = 'KKStable';
-    $password = 'Phetkho13112545';
-    $db_name = 'dormitory';
+session_start();
+
+$host = 'deploywebapp2.mysql.database.azure.com';
+$username = 'KKStable';
+$password = 'Phetkho13112545';
+$db_name = 'dormitory';
 
 
+// tạo kết nối
+$conn = new mysqli($host, $username, $password, $database);
+// Kiểm tra kết nối
+if ($conn->connect_error) {
+    die("Kết nối tới cơ sở dữ liệu thất bại: " . $conn->connect_error);
+} else {
+    // echo ("kết nối thành công");
+}
+
+$User = $_POST["User"];
+$Password = $_POST["Password"];
+
+// trích xuất dữ liệu nhập bằng hàm
+$Input_user = mysqli_real_escape_string($conn, $User);
+$Input_pass = mysqli_real_escape_string($conn, $Password);
+
+$sql = "SELECT * FROM `account` WHERE User = '$Input_user' and Password = '$Input_pass'";
+
+$result = mysqli_query($conn, $sql);
+
+// tắt hiển thị lỗi
+ini_set('display_errors', '0');
 
     include('server.php');
 ?>
