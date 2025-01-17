@@ -1,5 +1,12 @@
 <?php
     session_start();
+    $host = 'deploywebapp2.mysql.database.azure.com';
+    $username = 'KKStable';
+    $password = 'Phetkho13112545';
+    $db_name = 'dormitory';
+
+
+
     include('server.php');
 ?>
 
