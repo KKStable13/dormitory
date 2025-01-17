@@ -6,7 +6,6 @@ $username = 'KKStable';
 $password = 'Phetkho13112545';
 $db_name = 'dormitory';
 
-
 // tạo kết nối
 $conn = new mysqli($host, $username, $password, $database);
 // Kiểm tra kết nối
