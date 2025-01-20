@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dormitory_system";
+//$servername = "localhost";
+//$username = "root";
+//$password = "";
+//$dbname = "dormitory_system";
 
 // Create Connection
 $con = mysqli_connect($servername, $username, $password, $dbname);
