@@ -2,6 +2,7 @@
 // เริ่มต้น session
 session_start();
 
+
 // ล้างข้อมูลทั้งหมดใน session
 session_unset();
 
