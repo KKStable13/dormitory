@@ -1,3 +1,26 @@
+<?php
+session_start();
+// ตรวจสอบว่าผู้ใช้เข้าสู่ระบบหรือไม่
+if (!isset($_SESSION['username']) and !isset($_SESSION['username'])) {
+    header('location: login.php');
+}
+?>
+
+<?php
+$servername = "deploywebapp2.mysql.database.azure.com";
+$username = "KKStable";
+$password = "Phetkho13112545";
+$dbname = "dormitory";
+
+// Create Connection
+$con = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
