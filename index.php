@@ -48,7 +48,7 @@ if (!$con) {
     <main>
     <h1>ระบบบริหารจัดการหอพัก</h1>
     <h2>Dormitory Management System</h2>
-    <a href="login.php">
+    <a href="index.php">
         <button type="button">เข้าสู่ระบบ</button>
     </a>
     </main>
