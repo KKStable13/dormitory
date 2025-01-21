@@ -39,7 +39,7 @@ if (!$con) {
         <nav>
             <a href="" class="logo">ระบบบริหารจัดการหอพัก</a>
             <ul>
-                <li><a href="login.php"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="index.php"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
