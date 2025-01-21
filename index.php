@@ -2,7 +2,7 @@
 session_start();
 // ตรวจสอบว่าผู้ใช้เข้าสู่ระบบหรือไม่
 if (!isset($_SESSION['username']) and !isset($_SESSION['password'])) {
-    header('location: index.php');
+    header('location: login.php');
 }
 ?>
 
@@ -48,7 +48,7 @@ if (!$con) {
     <main>
     <h1>ระบบบริหารจัดการหอพัก</h1>
     <h2>Dormitory Management System</h2>
-    <a href="login.php">
+    <a href="index.php">
         <button type="button">เข้าสู่ระบบ</button>
     </a>
     </main>
