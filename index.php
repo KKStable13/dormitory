@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('server.php');
 // ตรวจสอบว่าผู้ใช้เข้าสู่ระบบหรือไม่
 //if (!isset($_SESSION['username']) and !isset($_SESSION['password'])) {
     //header('location: login.php');
