@@ -1,9 +1,9 @@
 <?php
 session_start();
 // ตรวจสอบว่าผู้ใช้เข้าสู่ระบบหรือไม่
-if (!isset($_SESSION['username']) and !isset($_SESSION['password'])) {
-    header('location: login.php');
-}
+//if (!isset($_SESSION['username']) and !isset($_SESSION['password'])) {
+    //header('location: login.php');
+//}
 ?>
 
 <?php
@@ -39,7 +39,7 @@ if (!$con) {
         <nav>
             <a href="" class="logo">ระบบบริหารจัดการหอพัก</a>
             <ul>
-                <li><a href="index.php"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="login.php"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -48,7 +48,7 @@ if (!$con) {
     <main>
     <h1>ระบบบริหารจัดการหอพัก</h1>
     <h2>Dormitory Management System</h2>
-    <a href="index.php">
+    <a href="login.php">
         <button type="button">เข้าสู่ระบบ</button>
     </a>
     </main>
