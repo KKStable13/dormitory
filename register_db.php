@@ -84,7 +84,7 @@ if (isset($_POST['reg_user'])) {
             exit();
         } else {
             $_SESSION['error'] = "Error inserting record: " . mysqli_error($con);
-            header("location: register.php");
+            header("location: register_db.php");
             exit();
         }
     } else {
