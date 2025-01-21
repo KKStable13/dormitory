@@ -1,10 +1,6 @@
 <?php
 session_start();
-include('server.php');
-$servername = "deploywebapp2.mysql.database.azure.com";
-$username = "KKStable";
-$password = "Phetkho13112545";
-$dbname = "dormitory";
+    include('server.php');
 
 $errors = array();
 
