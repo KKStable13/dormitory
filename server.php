@@ -13,7 +13,7 @@ $dbname = "dormitory";
 //$port = "3306";
 
 // Create Connection
-$con = mysqli_connect($servername, $username, $password, $dbname, $port);
+$con = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
 if (!$con) {
