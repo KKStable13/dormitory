@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "dormitory";
-$dbname = "dormitory_system";
+//$dbname = "dormitory_system";
 
 //$servername = "deploywebapp2.mysql.database.azure.com";
 //$username = "KKStable";
