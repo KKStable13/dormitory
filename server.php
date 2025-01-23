@@ -4,12 +4,12 @@
 //$username = "root";
 //$password = "";
 //$dbname = "dormitory";
-$dbname = "dormitory_system";
+//$dbname = "dormitory_system";
 
 $servername = "deploywebapp3.mysql.database.azure.com";
 $username = "KKStable";
 $password = "Phetkho13112545";
-//$dbname = "dormitory";
+$dbname = "dormitory";
 //$port = "3306";
 
 // Create Connection
