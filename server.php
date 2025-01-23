@@ -1,15 +1,15 @@
 <?php
 
-//$servername = "localhost";
-//$username = "root";
-//$password = "";
-//$dbname = "dormitory";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "dormitory";
 //$dbname = "dormitory_system";
 
-$servername = "deploywebapp3.mysql.database.azure.com";
-$username = "KKStable";
-$password = "Phetkho13112545";
-$dbname = "dormitory";
+//$servername = "deploywebapp3.mysql.database.azure.com";
+//$username = "KKStable";
+//$password = "Phetkho13112545";
+//$dbname = "dormitory";
 //$port = "3306";
 
 // Create Connection
