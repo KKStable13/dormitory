@@ -1,12 +1,12 @@
 <?php
 
-$servername = "localhost";
+//$servername = "localhost";
 //$username = "root";
 //$password = "";
 $dbname = "dormitory";
 //$dbname = "dormitory_system";
 
-//$servername = "deploywebapp3.mysql.database.azure.com";
+$servername = "deploywebapp3.mysql.database.azure.com";
 $username = "KKStable";
 $password = "Phetkho13112545";
 //$dbname = "dormitory";
