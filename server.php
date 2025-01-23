@@ -6,7 +6,7 @@
 $dbname = "dormitory";
 //$dbname = "dormitory_system";
 
-$servername = "deploywebapp2.mysql.database.azure.com";
+$servername = "deploywebapp3.mysql.database.azure.com";
 $username = "KKStable";
 $password = "Phetkho13112545";
 //$dbname = "dormitory";
