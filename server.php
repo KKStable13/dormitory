@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "13112545";
 $dbname = "dormitory";
 
 // Create Connection
