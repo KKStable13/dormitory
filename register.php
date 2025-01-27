@@ -1,9 +1,7 @@
 <?php
 session_start();
     include('server.php');
-?>
 
-<?php
 //$servername = "deploywebapp2.mysql.database.azure.com";
 //$username = "KKStable";
 //$password = "Phetkho13112545";

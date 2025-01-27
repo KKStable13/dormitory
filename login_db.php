@@ -2,6 +2,14 @@
 session_start();
     include('server.php');
 
+// Create Connection
+$con = mysqli_connect($servername, $username, $password, $database);
+
+// Check connection
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
 $errors = array();
 
 if (isset($_POST['login_user'])) {
