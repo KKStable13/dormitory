@@ -3,7 +3,7 @@ session_start();
     include('server.php');
 
 // Create Connection
-$con = mysqli_connect($servername, $username, $password, $database);
+$con = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
 if (!$con) {

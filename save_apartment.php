@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
 
 // ตรวจสอบการเชื่อมต่อฐานข้อมูล
 if (!$con) {
-    die('Database connection failed: ' . mysqli_connect_error());
+    die('dbname connection failed: ' . mysqli_connect_error());
 }
 
 // ดึงข้อมูลของผู้ใช้ที่ล็อกอิน

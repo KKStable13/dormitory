@@ -8,14 +8,14 @@ include('server.php');
 ?>
 
 <?php
-//$servername = "deploywebapp2.mysql.database.azure.com";
+//$servername = "deploywebapp2.mysql.dbname.azure.com";
 //$username = "KKStable";
 //$password = "Phetkho13112545";
-//$database = "dormitory";
+//$dbname = "dormitory";
 //$port = "3306";
 
 // Create Connection
-$con = mysqli_connect($servername, $username, $password, $database);
+$con = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
 if (!$con) {
