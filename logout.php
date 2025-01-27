@@ -2,7 +2,6 @@
 // เริ่มต้น session
 session_start();
 
-
 // ล้างข้อมูลทั้งหมดใน session
 session_unset();
 
@@ -10,6 +9,6 @@ session_unset();
 session_destroy();
 
 // เปลี่ยนเส้นทางกลับไปยังหน้า login.php
-header("Location: login.php");
+header("Location: index.php");
 exit();
 ?>
