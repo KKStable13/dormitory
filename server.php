@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "dormitory_system";
+$dbname = "dormitory";
 
 // Create Connection
 $con = mysqli_connect($servername, $username, $password, $dbname);
